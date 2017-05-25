@@ -1,0 +1,24 @@
+{
+	"author": "Dom",
+	"description": "Sample bookstore app using a RESTful API",
+	"folders":
+	[
+		{
+			"path": "/C/Users/didmqd/projects/bookstore"
+		}
+	],
+	"license": "ISC",
+	"main": "app.js",
+	"name": "bookstore",
+	"dependencies" : {
+		"express" : "*",
+		"body-parser" : "*",
+		"mongoose"	: "*"
+	},
+	"scripts":
+	{
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start" : "node app.js"
+	},
+	"version": "1.0.0"
+}
