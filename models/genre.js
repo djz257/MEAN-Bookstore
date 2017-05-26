@@ -16,7 +16,23 @@ var genreSchema = mongoose.Schema({
 var Genre = module.exports = mongoose.model('Genre', genreSchema);
 
 
-//Later change to module.exports
+//Get Genres
 module.exports.getGenres = function(callback, limit) {
-	Genre.find(callback).limit(limit);
-}
+	Genre.find({}, callback).limit(limit);
+};
+
+//Get genre by id
+module.exports.getGenre = function(id, callback){
+	Genre.findById(id, callback);
+};
+
+//Create new Genre- returns created genre.
+module.exports.createGenre = function(genre, callback) {
+	Genre.create(genre, callback);
+};
+
+//Delete genre
+module.exports.deleteGenre = function(id, callback){
+	var query = {_id : id};
+	Genre.remove(query, callback);
+};
