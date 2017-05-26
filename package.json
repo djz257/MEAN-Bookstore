@@ -13,7 +13,8 @@
 	"dependencies" : {
 		"express" : "*",
 		"body-parser" : "*",
-		"mongoose"	: "*"
+		"mongoose"	: "*",
+		"express-prettify" : "*"
 	},
 	"scripts":
 	{
